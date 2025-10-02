@@ -12,7 +12,7 @@ export default function Navbar() {
       {/* Logo (scrolls to Hero) */}
       <a href="#hero" className="flex items-center space-x-2 hover:opacity-80">
         <img
-          src="/logo.png" // ✅ replace with your actual filename in /public
+          src="/logo.webp" // ✅ replace with your actual filename in /public
           alt="Abhineet Raj Logo"
           className="h-32 w-auto" // adjust size as you like
         />

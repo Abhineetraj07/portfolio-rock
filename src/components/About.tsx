@@ -8,7 +8,7 @@ export default function About() {
     >
       {/* Profile Image */}
       <motion.img
-        src="/me.png"
+        src="/me.webp"
         alt="Abhineet Raj"
         className="w-36 h-36 md:w-56 md:h-56 object-cover rounded-full mb-6 md:mb-0"
         initial={{ opacity: 0, x: -80 }}
