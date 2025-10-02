@@ -25,18 +25,24 @@ export default function About() {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl font-heading text-neon mb-4">About Me</h2>
-        <p className="text-gray-300 text-base leading-relaxed">
-         I’m a third-year Computer Science and Engineering student at SRM Institute of Science & Technology with a strong interest in software development, problem-solving, and building real-world applications. 
-         Over the past few years, I’ve gained experience with technologies such as Java, Kotlin, React, Node.js, Firebase, MySQL, and PostgreSQL, allowing me to work across both frontend and backend development. 
-         I enjoy creating responsive web apps, scalable backends, and mobile solutions that focus on usability and impact.
+        {/* Heading */}
+        <h2 className="text-3xl font-extrabold italic uppercase text-neon mb-4">
+          ABOUT ME
+        </h2>
+
+        {/* Body */}
+        <p className="text-gray-300 text-base leading-relaxed font-sans">
+          I’m a third-year Computer Science and Engineering student at SRM Institute of Science & Technology with a strong interest in software development, problem-solving, and building real-world applications. 
+          Over the past few years, I’ve gained experience with technologies such as Java, Kotlin, React, Node.js, Firebase, MySQL, and PostgreSQL, allowing me to work across both frontend and backend development. 
+          I enjoy creating responsive web apps, scalable backends, and mobile solutions that focus on usability and impact.
           <br /><br />
-         Beyond academics, I actively participate in projects, hackathons, and collaborations, 
-         as I believe working in teams not only improves technical skills but also enhances communication and creativity. 
-         I’m passionate about continuous learning and excited to explore opportunities where I can apply my knowledge while growing as a developer.
-        Outside of coding, I enjoy music, travelling, and playing sports, which keep 
-        me energized and bring balance to my life. 
-        I’m always open to new ideas, collaborations, and challenges that inspire innovation.
+          Beyond academics, I actively participate in projects, hackathons, and collaborations, 
+          as I believe working in teams not only improves technical skills but also enhances communication and creativity. 
+          I’m passionate about continuous learning and excited to explore opportunities where I can apply my knowledge while growing as a developer.
+          <br /><br />
+          Outside of coding, I enjoy music, travelling, and playing sports, which keep 
+          me energized and bring balance to my life. 
+          I’m always open to new ideas, collaborations, and challenges that inspire innovation.
         </p>
       </motion.div>
     </section>

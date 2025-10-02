@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply Helvetica as the default body font */
 body {
-  @apply bg-dark text-white font-body;
+  @apply bg-dark text-white font-sans;
 }

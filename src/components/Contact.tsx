@@ -9,7 +9,9 @@ export default function Contact() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -23,23 +25,26 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-16 px-6 bg-dark text-center">
+      {/* Heading */}
       <motion.h2
-        className="text-3xl font-heading text-neon mb-10"
+        className="text-3xl font-extrabold italic uppercase text-neon mb-10"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Contact
+        CONTACT
       </motion.h2>
 
+      {/* Subtitle */}
       <motion.p
-        className="text-gray-400 mb-8 max-w-xl mx-auto"
+        className="text-gray-400 mb-8 max-w-xl mx-auto font-sans"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
-        Let’s connect! Reach out through email, LinkedIn, GitHub, or send me a message directly below.
+        Let’s connect! Reach out through email, LinkedIn, GitHub, or send me a
+        message directly below.
       </motion.p>
 
       {/* Social Links */}
@@ -82,37 +87,37 @@ export default function Contact() {
         transition={{ delay: 0.8, duration: 0.8 }}
       >
         <div className="mb-4">
-          <label className="block text-gray-300 mb-2">Name</label>
+          <label className="block text-gray-300 mb-2 font-sans">Name</label>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded bg-gray-800 text-gray-200 border border-gray-600 focus:outline-none focus:border-neon"
+            className="w-full px-4 py-2 rounded bg-gray-800 text-gray-200 border border-gray-600 focus:outline-none focus:border-neon font-sans"
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-300 mb-2">Email</label>
+          <label className="block text-gray-300 mb-2 font-sans">Email</label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-2 rounded bg-gray-800 text-gray-200 border border-gray-600 focus:outline-none focus:border-neon"
+            className="w-full px-4 py-2 rounded bg-gray-800 text-gray-200 border border-gray-600 focus:outline-none focus:border-neon font-sans"
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-gray-300 mb-2">Message</label>
+          <label className="block text-gray-300 mb-2 font-sans">Message</label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="w-full px-4 py-2 rounded bg-gray-800 text-gray-200 border border-gray-600 focus:outline-none focus:border-neon"
+            className="w-full px-4 py-2 rounded bg-gray-800 text-gray-200 border border-gray-600 focus:outline-none focus:border-neon font-sans"
             required
           />
         </div>

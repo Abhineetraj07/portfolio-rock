@@ -9,13 +9,17 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      {/* Logo / Name (scrolls to Hero) */}
-      <a href="#hero" className="text-neon font-heading text-2xl hover:opacity-80">
-        Abhineet Raj
+      {/* Logo (scrolls to Hero) */}
+      <a href="#hero" className="flex items-center space-x-2 hover:opacity-80">
+        <img
+          src="/logo.png" // ✅ replace with your actual filename in /public
+          alt="Abhineet Raj Logo"
+          className="h-32 w-auto" // adjust size as you like
+        />
       </a>
 
       {/* Center Menu */}
-      <div className="hidden md:flex space-x-8 text-gray-300 font-medium">
+      <div className="hidden md:flex space-x-8 text-gray-300 font-sans font-medium">
         <a href="#about" className="hover:text-neon transition">About</a>
         <a href="#skills" className="hover:text-neon transition">Skills</a>
         <a href="#projects" className="hover:text-neon transition">Projects</a>
@@ -25,13 +29,28 @@ export default function Navbar() {
 
       {/* Social Icons */}
       <div className="flex space-x-5 text-xl text-gray-300">
-        <a href="https://github.com/Abhineetraj07" target="_blank" className="hover:text-neon">
+        <a
+          href="https://github.com/Abhineetraj07"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-neon"
+        >
           <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/abhineet2005/" target="_blank" className="hover:text-neon">
+        <a
+          href="https://www.linkedin.com/in/abhineet2005/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-neon"
+        >
           <FaLinkedin />
         </a>
-        <a href="https://www.instagram.com/abhineetraj07/" target="_blank" className="hover:text-neon">
+        <a
+          href="https://www.instagram.com/abhineetraj07/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-neon"
+        >
           <FaInstagram />
         </a>
       </div>

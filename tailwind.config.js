@@ -12,8 +12,8 @@ export default {
         rockRed: "#e63946",
       },
       fontFamily: {
-        heading: ["Bebas Neue", "sans-serif"],
-        body: ["Montserrat", "sans-serif"],
+        heading: ["Bebas Neue", "sans-serif"], // ✅ For titles
+        sans: ["Helvetica", "Arial", "sans-serif"], // ✅ For body text
       },
     },
   },

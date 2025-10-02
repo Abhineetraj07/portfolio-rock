@@ -43,14 +43,15 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="py-16 px-6 bg-dark text-center">
+      {/* Section Heading */}
       <motion.h2
-        className="text-3xl font-heading text-neon mb-10"
+        className="text-3xl font-extrabold italic uppercase text-neon mb-10"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Projects
+        PROJECTS
       </motion.h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -76,10 +77,10 @@ export default function Projects() {
 
               {/* Back (Details) */}
               <div className="absolute inset-0 bg-dark border border-gray-700 rounded-xl p-4 flex flex-col justify-center items-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                <h3 className="text-xl font-bold text-gray-200 mb-2">
+                <h3 className="text-xl font-bold text-gray-200 mb-2 font-sans">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 text-sm mb-3">
+                <p className="text-gray-400 text-sm mb-3 font-sans">
                   {project.description}
                 </p>
 
@@ -87,7 +88,7 @@ export default function Projects() {
                   {project.tech.map((t, j) => (
                     <span
                       key={j}
-                      className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded"
+                      className="text-xs px-2 py-1 bg-gray-700 text-gray-300 rounded font-sans"
                     >
                       {t}
                     </span>
@@ -101,7 +102,7 @@ export default function Projects() {
                       target="_blank"
                       className="text-neon hover:underline flex items-center space-x-1"
                     >
-                      <FaGithub /> <span>Code</span>
+                      <FaGithub /> <span className="font-sans">Code</span>
                     </a>
                   )}
                   {project.demo && (
@@ -110,7 +111,7 @@ export default function Projects() {
                       target="_blank"
                       className="text-neon hover:underline flex items-center space-x-1"
                     >
-                      <FaExternalLinkAlt /> <span>Demo</span>
+                      <FaExternalLinkAlt /> <span className="font-sans">Demo</span>
                     </a>
                   )}
                 </div>

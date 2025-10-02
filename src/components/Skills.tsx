@@ -16,16 +16,18 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="py-16 px-6 bg-dark text-center">
+      {/* Heading */}
       <motion.h2
-        className="text-3xl font-heading text-neon mb-10"
+        className="text-3xl font-extrabold italic uppercase text-neon mb-10"
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        Skills
+        SKILLS
       </motion.h2>
 
+      {/* Skill Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
         {skills.map((skill, i) => (
           <motion.div
@@ -37,8 +39,8 @@ export default function Skills() {
             viewport={{ once: true }}
           >
             {skill.icon}
-            <h3 className="mt-3 text-lg font-bold text-gray-200">{skill.name}</h3>
-            <p className="text-sm text-gray-400">{skill.level}</p>
+            <h3 className="mt-3 text-lg font-bold text-gray-200 font-sans">{skill.name}</h3>
+            <p className="text-sm text-gray-400 font-sans">{skill.level}</p>
           </motion.div>
         ))}
       </div>
